@@ -11,7 +11,6 @@ function testSize(num) {
   }else{
     return "Huge";
   }
-  return "Change Me";
   // Only change code above this line
 }
 testSize(7);
