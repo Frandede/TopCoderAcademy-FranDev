@@ -13,7 +13,7 @@ switch(val){
   break;
   default:
   answer = "stuff";
-  break
+  break;
 }
   // Only change code above this line
   return answer;
