@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title" >Survey Form</h1>
+    <p id ="description">Please fill out this survey</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" name="name" placeholder="Enter your name" type="text" required /></label>
+        <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+        <label id="number-label"for="number">Number: <input id="number" name="number" type="number" placeholder="Enter a name 1-10" required min="1" max="10" /></label>
+        <label for="last-name">Select one: <select dropdown id="dropdown" name="dropdown" type="text" required />
+         <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="Radio Button 1"><input id="Radio Button 1" type="radio" value="1" name="Radio Button" class="inline" /> Radio Button 1
+        <label for="Radio Button 2"><input id="Radio Button 2" type="radio" value="1" name="Radio Button" class="inline" /> Radio Button 2</label>
+        <label for="checkboxes" name="checkboxes">
+          <input id="checkbox1" type="checkbox" value="1" required name="terms-and-conditions" class="inline" /> Checkboxes
+        </label>
+        <label for="checkboxes" name="checkboxes">
+          <input id="checkbox2" value="2" type="checkbox" required name="checkboxes" class="inline" /> Checkboxes
+        </label>
+        <label for="checkboxes" name="checkboxes">
+          <input id="checkboxes" type="checkbox" value="3" required name="checkboxes" class="inline" /> Checkboxes
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="textarea">Additional Comments:
+          <textarea id="textarea" name="textarea" rows="3" cols="30" placeholder="Add comments"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
